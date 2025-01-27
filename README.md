@@ -29,11 +29,7 @@ I am a passionate and dedicated software developer with a focus on web developme
 - **CSS3**: for styling the portfolio with responsive design and animations.
 - **JavaScript**: for interactive functionality.
 
-## Languages Used
-
-![Languages](https://img.shields.io/github/languages/count/mohana-g/my-portfolio)
-![Top Language](https://img.shields.io/github/languages/top/mohana-g/my-portfolio)
-
 
 ## Portfolio HomePage
+
 ![Portfolio Screenshot](Homepage.png)
