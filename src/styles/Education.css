@@ -1,0 +1,96 @@
+/* Background Section */
+#education {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #244a8b);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Glowing Effect */
+#education::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(80px);
+  border-radius: 50%;
+}
+
+#education h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Container for Education Items */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Individual Education Card */
+.education-item {
+  padding: 20px;
+  width: 80%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Animation */
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Education Title */
+.education-item h3 {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  color: #ffdd57;
+}
+
+/* School/College Name */
+.education-item p {
+  font-size: 1.2rem;
+  color: #f8f8f8;
+  font-weight: 300;
+}
+
+/* Score Styling */
+.score {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4f5a;
+  font-family: "Courier New", monospace;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(255, 79, 90, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* Score Hover Effect */
+.score:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}

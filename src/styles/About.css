@@ -1,0 +1,49 @@
+/* Background and Layout */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation for Heading */
+#about h1 {
+  font-size: 3.5rem;
+  font-family: Raleway;
+  margin-bottom: 0;
+  color: white;
+  font-style: oblique;
+  opacity: 0;
+  transform: translateY(30px); /* Start position */
+  animation: slideInUp 1s forwards 0.5s; /* Delay to make it appear after the page loads */
+}
+
+/* Animation for Paragraph */
+#about p {
+  font-size: 2.2rem;
+  font-family: Raleway;
+  font-style: italic;
+  color: #be3144;
+  opacity: 0;
+  transform: translateY(30px); /* Start position */
+  animation: slideInUp 1s forwards 1s; /* Delay so it appears after h1 */
+}
+
+/* Slide-Up Animation Keyframes */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}

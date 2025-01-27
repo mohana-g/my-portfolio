@@ -1,0 +1,80 @@
+#internship {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* Darker gradient for contrast */
+  color: #ecf0f1; /* Light text color for better contrast */
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Company Logo */
+.company-logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Internship Section Heading */
+#internship h2 {
+  font-size: 2rem;
+  color: #f39c12; /* Gold color for the heading to stand out */
+  margin-bottom: 20px;
+}
+
+/* Position, Duration, and Description Styling */
+.position, .duration, .work-description {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ecf0f1; /* Light text color for readability */
+}
+
+.position {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.duration {
+  font-style: italic;
+  color: #bdc3c7; /* Light gray for duration text */
+}
+
+.duration-dates {
+  font-weight: bold;
+  color: #e74c3c; /* Red color for date highlights */
+}
+
+.work-description {
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  #internship {
+    padding: 30px 10px;
+  }
+
+  .internship-container {
+    padding: 20px;
+  }
+
+  .company-logo img {
+    width: 80px; /* Adjust logo size for smaller screens */
+  }
+
+  #internship h2 {
+    font-size: 1.8rem;
+  }
+
+  .position {
+    font-size: 1.2rem;
+  }
+
+  .work-description {
+    font-size: 1rem;
+  }
+}

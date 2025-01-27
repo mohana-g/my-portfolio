@@ -1,0 +1,86 @@
+/* Navbar Styles */
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #be3144;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+/* Navbar Links */
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar ul li {
+  margin: 0 15px;
+}
+
+#navbar ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #ffdddd;
+}
+
+/* Hamburger Menu (hidden by default) */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;  /* Make it absolute */
+  left: 15px; /* Move it slightly to the left */
+}
+
+.menu-icon .line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  /* Make the navbar items stack vertically on small screens */
+  #navbar ul {
+    display: none;  /* Hide the navbar links initially */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px; /* Adjust according to navbar height */
+    background: #be3144;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  #navbar ul.show {
+    display: flex;  /* Show the navbar links when menu is toggled */
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+  }
+
+  /* Display the hamburger menu icon */
+  .menu-icon {
+    display: flex;
+  }
+}

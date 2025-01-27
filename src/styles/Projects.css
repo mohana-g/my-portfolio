@@ -1,0 +1,81 @@
+/* Background Section */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #7c7171, #4f4f4f); /* Darker version of the beige to soft grey gradient */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #eaeaea; /* Light Grey for text */
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Section Heading */
+#projects h2 {
+  font-size: 2.5rem;
+  color: #eaca7f; /* Soft Gold for contrast */
+  margin-bottom: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Project Tile Container */
+.project-tile {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  width: 80%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.12); /* Subtle Glassmorphism */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Animation */
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Project Title */
+.project-tile h3 {
+  font-size: 1.8rem;
+  color: #eaca7f; /* Soft Gold */
+  margin-bottom: 15px;
+}
+
+/* Project Description */
+.project-tile p {
+  font-size: 1rem;
+  color: #eaeaea; /* Light Grey for better readability */
+  margin-bottom: 10px;
+}
+
+/* Project Link Button */
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: linear-gradient(90deg, #e09f3e, #ffb703); /* Bronze to Yellow */
+  color: #4f4f4f; /* Dark Grey */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(224, 159, 62, 0.4);
+}
+
+/* Button Hover Effect */
+.project-link:hover {
+  background: linear-gradient(90deg, #ffb703, #e09f3e);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(224, 159, 62, 0.6);
+}

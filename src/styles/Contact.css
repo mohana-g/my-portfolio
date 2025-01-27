@@ -1,0 +1,98 @@
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px; /* Reduced padding */
+  text-align: center;
+  background: linear-gradient(135deg, #181719, #3a3d40); /* Dark to medium grey gradient */
+  color: #fff;
+  height: auto; /* Adjust height based on content */
+  min-height: 80vh; /* Set a minimum height to ensure section is tall enough */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards; /* Fade and slide animation */
+}
+
+/* Header Text Style */
+.contact-section-header h2 {
+  margin-bottom: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  color: #be3144;
+  opacity: 0;
+  animation: textSlideIn 1.5s ease-out forwards; /* Text animation */
+}
+
+/* Text Slide-in Animation */
+@keyframes textSlideIn {
+  0% {
+    transform: translateY(50px); /* Start below */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-In and Slide-Up for the entire section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Contact Links Container */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Contact Detail Links Style */
+.contact-details {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-details i {
+  font-size: 1.8rem;
+  color: #d49400;
+}
+
+/* Hover effect for contact details */
+.contact-details:hover {
+  color: #feae02; /* Light cyan on hover */
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contact-details {
+    font-size: 1.2rem;
+  }
+
+  .contact-details i {
+    font-size: 1.5rem;
+  }
+}
