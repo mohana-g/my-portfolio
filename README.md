@@ -22,11 +22,11 @@ I am a passionate and dedicated software developer with a focus on web developme
 - Interactive sections with smooth scrolling effects and transitions.
 - Built using React.js for the front-end and CSS for styling.
 
-![Portfolio Screenshot](Homepage.png)
-
 ## Technologies Used
 
 - **React.js**: for building a dynamic, single-page application with reusable components.
 - **HTML5**: for structuring the content.
 - **CSS3**: for styling the portfolio with responsive design and animations.
 - **JavaScript**: for interactive functionality.
+## Portfolio HomePage
+![Portfolio Screenshot](Homepage.png)
